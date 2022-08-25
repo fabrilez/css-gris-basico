@@ -1,0 +1,52 @@
+.container {
+    border: 5px solid blue;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 80px 80px 80px;
+    place-content: center;
+    grid-template-areas: 
+        "side-nav nav nav"
+        "main main side"
+        "footer-left footer-center footer-right";
+}
+
+.item { 
+    font-size: 4rem;
+    
+}
+
+.item-1 {
+    background-color: rgb(97, 181, 85);
+     grid-area: side-nav; 
+}
+
+.item-2 {
+    background-color: green;
+     grid-area: nav; 
+}
+
+.item-3 {
+    background-color: rgb(51, 218, 32);
+     grid-area: main; 
+}
+
+.item-4 {
+    background-color: rgb(93, 224, 88);
+     grid-area: side; 
+}
+
+.item-5 {
+    background-color: rgb(96, 186, 74);
+    grid-area: footer-left; 
+}
+
+.item-6 {
+    background-color: rgb(14, 209, 89);
+     grid-area: footer-center; 
+}
+
+.item-7 {
+    background-color: rgb(32, 238, 9);
+    grid-area: footer-right;
+}
